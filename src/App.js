@@ -23,12 +23,7 @@ function App() {
 
   const handleInput = (e) => setInput(e.target.value)
 
-  const handleClick = () => setValue(input)
-
-
-  console.log(data)
-
-  
+  const handleClick = () => setValue(input)  
 
 
   return (
