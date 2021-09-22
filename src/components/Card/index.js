@@ -1,16 +1,15 @@
-import { Container } from "./style.js"
+import './style.css'
 
-export default function Card ({data, image}){
+export default function Card ({name, desc, img}) {
     
-    return(
-        <>
-            <Container>
-                <img src={image}></img>
-                <section>
-                    <h2>{data.name}</h2>
-                    <h4>{data.description}</h4>
-                </section>
-            </Container>
-        </>
+  
+    return (
+        <div className="card">
+            <img src={img} alt={name}></img>
+            <section>
+                <h2> {name}</h2>
+                <h4>{desc}</h4>
+            </section>
+        </div>
     )
 }
