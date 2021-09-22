@@ -26,7 +26,7 @@ function App() {
           <button onClick={handleSearch}>pesquisar</button>
           <ul>
             {
-              info.map((elt, index) => <li className="item"> <Card name={elt.name} desc={elt.description} key={index} img={elt.owner.avatar_url} f={func} ></Card> </li>)
+              info.map((elt, index) => <li className="item"> {elt.owner !== undefined ? <Card name={elt.name} desc={elt.description} key={index} img={elt.owner.avatar_url} f={func}></Card> : alert('repositório inexistente') }</li>)
             }
             { console.log(info)}
           </ul>
